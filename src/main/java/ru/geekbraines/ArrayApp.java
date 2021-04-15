@@ -1,25 +1,18 @@
 package ru.geekbraines;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class ArrayApp {
 
-    public static void main(String[] args) {
-        ArrayApp a1 = new ArrayApp();
-        int[] arr1 = {1,2,4,0,3,7};
-        try {
-            int[] arr2 = a1.method1(arr1);
-            Arrays.stream(arr2).forEach(System.out::println);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+    private static final Logger LOGGER = LogManager.getLogger(ArrayApp.class.getName());
 
     public int[] method1(int[] array) throws RuntimeException {
-        boolean noExcept = false;
 
-        int [] arrExcept = Arrays.stream(array).filter( x -> x == 4).toArray();
-        if (arrExcept.length == 0) {
+        if (!Arrays.stream(array).anyMatch( x -> x == 4)) {
             throw new RuntimeException("массив не содержит четвёрок");
         }
 
@@ -30,8 +23,12 @@ public class ArrayApp {
                 break;
             }
         }
-        int[] newArray = Arrays.stream(array).skip(n).toArray();
 
-        return newArray;
+        return Arrays.stream(array).skip(n).toArray();
+    }
+
+    public boolean method2(int[] array) {
+        return Arrays.stream(array).allMatch(x -> (x == 4) ^ (x == 1));
     }
 }
+
