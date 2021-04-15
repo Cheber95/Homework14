@@ -1,0 +1,10 @@
+INFO  2021-04-15 17:21:57 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:26) - Тест пройден
+INFO  2021-04-15 17:47:41 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:26) - Тест метода 1 пройден
+INFO  2021-04-15 17:50:41 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:26) - Тест метода 1 пройден
+INFO  2021-04-15 18:00:54 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:35) - Тест метода 2 пройден
+INFO  2021-04-15 18:01:03 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:26) - Тест метода 1 пройден
+INFO  2021-04-15 18:01:03 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:35) - Тест метода 2 пройден
+INFO  2021-04-15 18:02:08 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:35) - Тест метода 2 пройден
+INFO  2021-04-15 18:18:23 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:36) - Тест метода 2 пройден
+INFO  2021-04-15 18:18:59 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:26) - Тест метода 1 пройден
+INFO  2021-04-15 18:18:59 [main] ru.geekbraines.ArrayAppTest (ArrayAppTest.java:36) - Тест метода 2 пройден
